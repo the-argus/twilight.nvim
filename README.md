@@ -58,9 +58,11 @@ Twilight comes with the following defaults:
     alpha = 0.25, -- amount of dimming
     -- we try to get the foreground from the highlight groups or fallback color
     color = { "Normal", "#ffffff" },
+    term_bg = "#000000", --background color for dimmed areas
     inactive = false, -- when true, other windows will be fully dimmed (unless they contain the same buffer)
   },
   context = 10, -- amount of lines we will try to show around the current line
+  node_context = 2, -- node depth (number of nested blocks that stay highlighted
   treesitter = true, -- use treesitter when available for the filetype
   -- treesitter is used to automatically expand the visible text,
   -- but you can further control the types of nodes that should always be fully expanded
